@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+  <title>講習会</title>
+</head>
+<body>
+  <!-- ヘッダー -->
+  <header>
+
+    <div class="header_inner">
+      <h1 class="header_logo"><img src="./img/logo.png" alt="ロゴ"></h1>
+      <div class="header_menu_container">
+        <ul class="header_menu">
+          <li class="header_menu_list"><a href="#">MAP</a></li>
+          <li class="header_menu_list"><a href="#">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ハンバーガーメニュー -->
+    <div class="hmb_button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="hmb_menu">
+      <ul>
+        <li><a href="#">MAP</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li><a href="#">CAKE</a></li>
+        <li><a href="#">ICE</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <!-- コンテンツ -->
+  <main>
+    <div class="main_img_container">
+      <div class="main_img_left"><img src="./img/main_left.png" alt="Sample Text"></div>
+      <div class="main_img_right">
+        <img src="./img/main_right01.jpg" alt="画像">
+        <div class="item_img_container">
+          <div class="item_list"><img src="./img/main_right01.jpg" alt="画像"></div>
+          <div class="item_list"><img src="./img/main_right02.jpg" alt="画像"></div>
+          <div class="item_list"><img src="./img/main_right03.jpg" alt="画像"></div>
+          <div class="item_list"><img src="./img/main_right04.jpg" alt="画像"></div>
+          <div class="item_list"><img src="./img/main_right05.jpg" alt="画像"></div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <div class="sub_img_container">
+
+    <!-- モーダルウィンドウ　サムネイル一覧 -->
+    <div class="sub_img_thumbnail">
+
+      <div class="modal_open" data-modal="modal01">
+        <div class="thumbnail">
+          <img src="./img/sub_img01.jpg" alt="ショートケーキ">
+        </div>
+      </div>
+      <div class="modal_open" data-target="modal_02">
+        <div class="thumbnail">
+          <img src="./img/sub_img02.jpg" alt="チーズケーキ">
+        </div>
+      </div>
+      <div class="modal_open" data-target="modal_03">
+        <div class="thumbnail">
+          <img src="./img/sub_img03.jpg" alt="パンケーキ">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- モーダルの中身 -->
+
+    <div id="modal01" class="modal">
+      <div class="modal_bg">
+        <div class="modal_content">
+          <img src="./img/sub_img01.jpg" alt="ショートケーキ">
+          <span class="modal_colse">&times;</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal_02" class="modal">
+      <div class="modal_bg">
+        <div class="modal_content">
+          <img src="./img/sub_img02.jpg" alt="チーズケーキ">
+          <span class="modal_colse">&times;</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal_03" class="modal">
+      <div class="modal_bg">
+        <div class="modal_content">
+          <img src="./img/sub_img03.jpg" alt="パンケーキ">
+          <span class="modal_colse">&times;</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- フッター -->
+  <footer>
+    <p class="text">© Under Sample Text 2024</p>
+  </footer>
+  <script src="./js/index.js"></script>
+</body>
+</html>
